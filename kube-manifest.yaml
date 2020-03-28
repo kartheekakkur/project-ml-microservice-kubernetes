@@ -1,0 +1,38 @@
+#Deployment for the udacity app
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udacity-app
+  labels:
+    app: udacity-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: udacity-app
+  template:
+    metadata:
+      labels:
+        app: udacity-app
+    spec:
+      containers:
+      - name: app
+        image: kartheekakkur1/app:latest
+        ports:
+        - containerPort: 80
+        
+---
+
+#service run the application
+apiVersion: v1
+kind: Service
+metadata:
+  name: udacity-svc
+spec:
+  selector:
+    app: udacity-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
