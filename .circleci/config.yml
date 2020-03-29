@@ -39,8 +39,8 @@ jobs:
             - run:
                 name: run lint
                 command: |
-                . venv/bin/activate
-                make lint
+                  . venv/bin/activate
+                  make lint
 
 workflows:
   main:
