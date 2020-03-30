@@ -23,20 +23,41 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ---
 
-## Setup the Environment
+### Setup the Environment
+Create a virtualenv and activate it
+Run make install to install the necessary dependencies
+Running app.py
+Standalone:
+app.py contains the web app built using flask framework.
 
-* Create a virtualenv and activate it
-* Run `make install` to install the necessary dependencies
+python app.py
 
-### Running `app.py`
+### Run in Docker:
+run_docker.sh contains the script to run the app in the docker.
 
-1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
+./run_docker.sh
+
+### Run in Kubernetes:
+run_kubernetes.sh contains the script to run app in the Kubernetes.
+
+./run_kubernetes.sh
+
+### Verify that application is running
+make_prediction.sh contains the script to check the predictions.
+
+./make_prediction.sh
+
+### Upload to Docker Hub
+upload_docker.sh contains the script to upload the docker image to the Docker Hub.
+
+./upload_docker.sh
 
 ### Kubernetes Steps
+Setup and Configure Docker locally
+Setup and Configure Kubernetes locally
+Create Flask app in Container
+Run via kubectl
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+### Kubernetes Clean Up
+kubectl delete deployment.apps/development
+kubectl delete svc development
