@@ -15,7 +15,7 @@ kubectl apply -f kube-manifest.yaml
 
 # Step 3:
 # List kubernetes pods
-kubectl get pods -A
+kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
