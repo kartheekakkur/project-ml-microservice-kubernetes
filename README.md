@@ -1,4 +1,4 @@
-[![<ORG_NAME>](https://circleci.com/<VCS>/<ORG_NAME>/<PROJECT_NAME>.svg?style=svg)](<LINK>)
+[![<ORG_NAME>](https://circleci.com/<VCS>/<ORG_NAME>/<PROJECT_NAME>.svg?style=svg)](https://app.circleci.com/pipelines/github/kartheekakkur/project-ml-microservice-kubernetes/28/workflows/a27e8e2c-d81b-42d9-94dd-6098cf08cb3a/jobs/33)
 
 ## Project Overview
 
