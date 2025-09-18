@@ -11,7 +11,7 @@ dockerpath=kartheekakkur1
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 
-docker login -u $dockerpath -p Chinnu@1
+docker login -u $dockerpath -p xx
 docker tag 2a7c8f7bcbff kartheekakkur1/app
 
 # Step 3:
